@@ -273,7 +273,7 @@ footer {
   line-height: normal;
   letter-spacing: 2px;
   text-align: center;
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 10px 15px;
 }
 .main-banner .carousel{
@@ -441,6 +441,7 @@ font-family: "ProximaNova-Light";
   }
   .mobile-btns{
       display: block;
+      color: white !important;
   }
   .mobile-btns {
   position: absolute;
