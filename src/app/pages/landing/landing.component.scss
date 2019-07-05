@@ -1,5 +1,10 @@
+@font-face {font-family: proximanovabold;src: url('../../../assets/fonts/proximanova/ProximaNova-Bold.woff');}
+@font-face {font-family: proximanova-regular;src: url('../../../assets/fonts/proximanova/ProximaNova-Regular.woff');}
+@font-face {font-family: proximanova-light;src:url('../../../assets/fonts/proximanova/ProximaNova-Light.woff');}
+@font-face {font-family: proximanova-semibold;src: url('../../../assets/fonts/proximanova/ProximaNova-Semibold.woff');}
+
 body {
-  font-family: "ProximaNova-Regular";
+  font-family: proximanova-regular;
   background: #fff;
 }
 
@@ -69,7 +74,7 @@ label {
   padding: 50px 0;
 }
 .hassless-banner p{
-    font-family: "ProximaNova-Light";
+    font-family: proximanova-light;
   font-size: 16px;
   /* font-weight: 300; */
   font-style: normal;
@@ -110,7 +115,7 @@ label {
   padding: 13px 24px;
   margin-top: 20px;
   background-color: #9600ff;
-  font-family: "ProximaNova-Regular";
+  font-family: proximanova-semibold;
   text-transform: uppercase;
 }
 .hassless-banner {
