@@ -14,23 +14,21 @@ import { AppRoutes } from './app.routing';
 
 // App Component
 import { AppComponent } from './app.component';
-import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
-    imports: [
-        BrowserModule,
-        RouterModule.forRoot(AppRoutes, { useHash: true }),
-        SharedModule,
-        TemplateModule
-    ],
-    declarations: [
-        AppComponent,
-        CommonLayoutComponent,
-        AuthenticationLayoutComponent,
-        LandingComponent
-    ],
-    providers: [TemplateService],
-    bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(AppRoutes, { useHash: true }),
+    SharedModule,
+    TemplateModule
+  ],
+  declarations: [
+    AppComponent,
+    CommonLayoutComponent,
+    AuthenticationLayoutComponent
+  ],
+  providers: [TemplateService],
+  bootstrap: [AppComponent]
 })
 
 

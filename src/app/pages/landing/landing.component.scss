@@ -51,10 +51,7 @@ h6 {
 span {
   display: inline-block;
 }
-img {
-  max-width: 100%;
-  display: block;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -75,7 +72,7 @@ label {
 }
 .hassless-banner p{
     font-family: proximanova-light;
-  font-size: 16px;
+  font-size: 20px;
   /* font-weight: 300; */
   font-style: normal;
   font-stretch: normal;
@@ -87,7 +84,7 @@ label {
 
 .hassless-banner h3{
       font-family: "ProximaNova-Bold";
-    font-size: 25px;
+    font-size: 32px;
     /*font-weight: bold;*/
     font-style: normal;
     font-stretch: normal;
@@ -102,16 +99,126 @@ label {
 }
 .logo-header a,
 .footer-logo a{
-    max-width:50%;
+    max-width:40%;
 }
-.social-lists li {
+/*.social-lists li {
     max-width: 18%;
-}
+}*/
 .social-row {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
  }
+ .newsletter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+.newsletter .container_news {
+  width: 90%;
+}
+ @media (min-width: 1200px){
+  .container{
+    max-width: 1400px !important;
+    margin-left: 12%;
+  }
+  img {
+    max-width: 70%;
+    display: block;
+  }
+  .right-contain{
+    margin-left: 4%;
+  }
+ }
+
+
+
+
+ @media (min-width: 576px){
+
+  .container_news{
+
+   max-width: 400px ;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+ }
+ @media (min-width: 768px){
+  .newsletter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .container_news{
+
+   max-width: 600px ;
+  }
+
+ }
+ @media (min-width: 992px){
+  .newsletter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  img {
+    max-width: 70%;
+    display: block;
+  }
+  .container_news{
+
+   max-width: 750px;
+  }
+
+ }
+ @media (min-width: 1200px){
+  .newsletter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+  .container_news{
+
+   max-width: 1150px ;
+  }
+
+ }
+
+
 .btn_purple{
+
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 40px;
+  padding: 25px 35px;
+  margin-top: 20px;
+  background-color: #9600ff;
+  font-family: proximanova-semibold;
+  box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
+  text-transform: uppercase;
+}
+.btn_purple_sign{
 
   font-size: 14px;
   font-weight: 600;
@@ -121,12 +228,17 @@ label {
   letter-spacing: 0.8px;
   text-align: center;
   color: #ffffff;
-  border-radius: 30px;
-  padding: 13px 24px;
+  border-radius: 5px;
+  padding: 15px 25px;
   margin-top: 20px;
   background-color: #9600ff;
   font-family: proximanova-semibold;
+  box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
   text-transform: uppercase;
+}
+.container-fluid{
+    padding-left: 75px;
+    padding-right:75px;
 }
 .hassless-banner {
 
@@ -139,16 +251,15 @@ label {
   padding: 50px 0;
 }
 .day2day h3{
-    font-family: "ProximaNova-Bold";
-    font-size: 22px;
-    /*font-weight: bold;*/
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.18;
-    letter-spacing: 0.6px;
-    text-align: center;
-    color: #6c00dc;
-    margin-bottom: 10px;
+  font-family: "ProximaNova-Bold";
+  font-size: 32px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #6c00dc;
+  margin-bottom: 10px;
 }
 .day2day h6{
   font-family: "ProximaNova-Regular";
@@ -163,26 +274,32 @@ label {
     margin-bottom: 10px;
 }
 .day2day p{
-    font-family: "ProximaNova-Regular";
-    font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.6;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: #4a4a4a;
-    margin-bottom: 10px;
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  padding: 0 16%;
 }
 .day2day {
 
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 5% 0;
 
+}
+.days .container{
+  margin-left: 5%;
 }
 .days .row{
   align-items: flex-start;
+
 }
 .state-line{
   background-color: #fff;
@@ -190,9 +307,12 @@ label {
 }
 .state-line .row{
   align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-top: 5%;
 }
 .state-line img {
-  max-width: 73%;
+  max-width: 50%;
   margin: 0 auto;
 }
 .state-line .hassless-banner{
@@ -204,7 +324,7 @@ label {
   background-color: #ffffff;
   padding: 20px;
   padding: 20px;
-  max-width: 950px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .mail-field{
@@ -214,8 +334,8 @@ label {
   padding: 15px 10px;
   border-radius: 7px;
   outline: none;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+  margin-left: 0%;
   font-family: "ProximaNova-Light";
 
 }
@@ -249,6 +369,11 @@ font-family: "ProximaNova-Light";
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width:150px;
+}
+.right-contain{
+  margin-right: 7%;
+
 }
 .main-header{
   padding: 20px;
@@ -260,7 +385,7 @@ footer {
   padding: 30px 0;
 }
 .main-header{
-  padding: 20px 0;
+  padding: 0px 0;
   box-shadow: 0 2px 8px 0 rgba(222, 222, 222, 0.5);
    -webkit-box-shadow: 0 2px 8px 0 rgba(222, 222, 222, 0.5);
           box-shadow: 0 2px 8px 0 rgba(222, 222, 222, 0.5);
@@ -277,19 +402,17 @@ footer {
   display: flex;
 }
 .btn_blue{
-      font-family: proximanova-semibold;
-  border-radius: 30px;
+  font-family: proximanova-semibold;
+  border-radius: 50px;
   background-color: #9600ff;
   text-transform: uppercase;
-  /* font-weight: 600; */
-  /* font-style: normal; */
-  /* font-stretch: normal; */
-  font-size: 15px;
+  font-size: 16px;
   line-height: normal;
   letter-spacing: 2px;
   text-align: center;
   color: #ffffff !important;
-  padding: 10px 15px;
+  padding: 25px 35px;
+  box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
 }
 .main-banner .carousel{
   padding: 50px 0;
@@ -298,22 +421,22 @@ footer {
   padding-top: 2%;
 }
 .banner-contents h2{
-font-size: 30px;
-font-weight: 300;
-font-style: normal;
-font-stretch: normal;
-line-height: 1.4;
-letter-spacing: 0.7px;
-color: rgba(74,74,74,0.8);
-margin-bottom: 20px;
-font-family: "ProximaNova-Light";
+  font-size: 34px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.7px;
+  color: rgba(74, 74, 74, 0.8);
+  margin-bottom: 20px;
+  font-family: "ProximaNova-Light";
 
 }
 .banner-contents h2 span{
   font-family: "ProximaNova-Bold";
   padding-top: 1%;
   color: #4a4a4a;
-  font-size: 22px;
+  font-size: 34px;
   letter-spacing: 1.5px;
 }
 .carousel-indicators li {
@@ -402,8 +525,22 @@ background-color: #9600ff;
   .day2day h3{
       font-size: 20px;
   }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .state-line img {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
 }
 @media(max-width : 767px){
+
+    .container-fluid{
+        padding-left: 10px;
+        padding-right:10px;
+    }
     .logo-header a, .footer-logo a{
         max-width: unset;
     }
@@ -418,6 +555,10 @@ background-color: #9600ff;
       margin-left: 0 !important;
       color: #4a4a4a !important;
       padding-bottom: 5%;
+  }
+  .state-line img {
+    max-width: 95%;
+    margin: 0 auto;
   }
 .menu_btns {
   display: flex;
@@ -444,7 +585,7 @@ background-color: #9600ff;
       flex-direction: column-reverse;
   }
   .hassless .mobile-btns {
-      bottom: -95px;
+      bottom: -80px;
   }
   .laws {
       padding: 60px 0;
@@ -468,6 +609,7 @@ background-color: #9600ff;
   width: 80%;
   margin-left: 10%;
   }
+
   .newsletter-row{
       padding: 20px 0px 25px;
       margin-top: 5%;
@@ -502,8 +644,8 @@ background-color: #9600ff;
   position: absolute;
   width: 85%;
   left: 0;
-  bottom: -45px;
-  padding: 32px 20px;
+ bottom: -30px;
+padding: 25px 20px;
   right: 0;
   margin: 0 auto;
   text-align: center;
@@ -526,12 +668,12 @@ background-color: #9600ff;
 
   .newsform .btn_purple {
       padding: 25px 0px;
-  border-radius: 50px;
-  width: 95%;
-  font-size: 15px;
-  margin-left: 3%;
-  letter-spacing: 1.5px;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 50px;
+      width: 100%;
+      font-size: 15px;
+      margin-left: 0;
+    letter-spacing: 1.5px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.5);
   }
   .newsletter-text p {
  font-size: 15px;
@@ -584,6 +726,7 @@ display: block;
       font-family: "ProximaNova-Regular";
       color:#9b9b9b;
       letter-spacing: 2.5px;
+      font-size:12px;
   }
   .social{
       padding-right: 0 !important;

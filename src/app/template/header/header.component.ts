@@ -1,37 +1,42 @@
 import { Component } from '@angular/core';
 import { TemplateService } from '../../shared/services/template.service';
+import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html'
+  selector: 'app-header',
+  templateUrl: './header.component.html'
 })
-export class HeaderComponent  {
+export class HeaderComponent {
 
-    searchModel : string;
-    isCollapse: boolean;
-    isOpen: boolean;
-    searchActived: boolean = false;
+  searchModel: string;
+  isCollapse: boolean;
+  isOpen: boolean;
+  searchActived: boolean = false;
 
-    constructor(private tplSvc: TemplateService) {
-    }
+  constructor(private tplSvc: TemplateService,
+    private router: Router) {
+  }
 
-    ngOnInit(): void {
-        this.tplSvc.isSideNavCollapseChanges.subscribe(isCollapse => this.isCollapse = isCollapse);
-        this.tplSvc.isSidePanelOpenChanges.subscribe(isOpen => this.isOpen = isOpen);
-    }    
+  goToHome() {
+    this.router.navigate(['/']);
+  }
+  ngOnInit(): void {
+    this.tplSvc.isSideNavCollapseChanges.subscribe(isCollapse => this.isCollapse = isCollapse);
+    this.tplSvc.isSidePanelOpenChanges.subscribe(isOpen => this.isOpen = isOpen);
+  }
 
-    toggleSideNavCollapse() {
-        this.isCollapse = !this.isCollapse;
-        this.tplSvc.toggleSideNavCollapse(this.isCollapse);
-    }
+  toggleSideNavCollapse() {
+    this.isCollapse = !this.isCollapse;
+    this.tplSvc.toggleSideNavCollapse(this.isCollapse);
+  }
 
-    toggleSidePanelOpen() {
-        this.isOpen = !this.isOpen;
-        this.tplSvc.toggleSidePanelOpen(this.isOpen);
-    }
+  toggleSidePanelOpen() {
+    this.isOpen = !this.isOpen;
+    this.tplSvc.toggleSidePanelOpen(this.isOpen);
+  }
 
-    toggleSearch () {
-        this.searchActived = !this.searchActived;
-        console.log(this.searchActived)
-    }
+  toggleSearch() {
+    this.searchActived = !this.searchActived;
+    console.log(this.searchActived)
+  }
 }
