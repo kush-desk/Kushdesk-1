@@ -129,7 +129,7 @@ label {
     display: block;
   }
   .right-contain{
-    margin-left: 4%;
+    margin-left: -1%;
   }
  }
 
@@ -296,6 +296,13 @@ label {
 }
 .days .container{
   margin-left: 5%;
+}
+
+@media(min-wdith: 1200px){
+  .days .container{
+    width: 85%;
+  }
+
 }
 .days .row{
   align-items: flex-start;
