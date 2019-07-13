@@ -9,6 +9,8 @@ global.uploads_url = base_url + '/uploads';
 global.frontend_url = base_url + '/src/pages';
 global.NOT_FOUND_ERROR = 405;
 global.SUCCESS_CODE = 200;
+var path = require('path')
+
 
 global.home_url = frontend_url + '/index';
 global.home_path = base_path + '/app/src/pages/index'
