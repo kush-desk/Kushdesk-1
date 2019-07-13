@@ -92,12 +92,12 @@ app.use('/dist', express.static(__dirname + '/dist'));
 /* Set static links to use uploads */
 app.use('/uploads', express.static(__dirname + '/app/uploads'));
 
-app.get('/', function (res, res) {
+app.get('/test/', function (res, res) {
   res.send("hello");
   return
 })
 
-//app.use('/', express.static(path.join(__dirname, 'dist/espire/')));
+app.use('/', express.static(path.join(__dirname, 'dist/espire/')));
 
 
 // app.get('/', function (req, res) {
