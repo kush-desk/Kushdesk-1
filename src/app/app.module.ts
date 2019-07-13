@@ -14,6 +14,7 @@ import { AppRoutes } from './app.routing';
 
 // App Component
 import { AppComponent } from './app.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   imports: [
