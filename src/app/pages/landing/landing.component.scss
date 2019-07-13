@@ -63,7 +63,7 @@ label {
   color: #203346;
   font-size: 15px;
   font-family: lato-regular;
-  font-weight: 800;
+  // //font-weight: 800;
   display: block;
 }
 .hassless{
@@ -73,7 +73,7 @@ label {
 .hassless-banner p{
     font-family: proximanova-light;
   font-size: 20px;
-  /* font-weight: 300; */
+  /* //font-weight: 300; */
   font-style: normal;
   font-stretch: normal;
   line-height: 1.7;
@@ -83,9 +83,9 @@ label {
 }
 
 .hassless-banner h3{
-      font-family: "ProximaNova-Bold";
+      font-family: "proximanovabold";
     font-size: 32px;
-    /*font-weight: bold;*/
+    /*//font-weight: bold;*/
     font-style: normal;
     font-stretch: normal;
     line-height: 1.18;
@@ -203,7 +203,7 @@ label {
 .btn_purple{
 
   font-size: 16px;
-  font-weight: 600;
+  //font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -221,7 +221,7 @@ label {
 .btn_purple_sign{
 
   font-size: 14px;
-  font-weight: 600;
+  //font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -251,7 +251,7 @@ label {
   padding: 50px 0;
 }
 .day2day h3{
-  font-family: "ProximaNova-Bold";
+  font-family: "proximanovabold";
   font-size: 32px;
   font-style: normal;
   font-stretch: normal;
@@ -264,7 +264,7 @@ label {
 .day2day h6{
   font-family: "ProximaNova-Regular";
     font-size: 15px;
-    /*font-weight: 300;*/
+    /*//font-weight: 300;*/
     font-style: normal;
     font-stretch: normal;
     line-height: 1.42;
@@ -276,7 +276,7 @@ label {
 .day2day p{
   font-family: "ProximaNova-Regular";
   font-size: 16px;
-  font-weight: normal;
+  //font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.6;
@@ -346,7 +346,7 @@ label {
 .newsletter-text p {
 font-family: "ProximaNova-Light";
   font-size: 14px;
-  /*font-weight: 300;*/
+  /*//font-weight: 300;*/
   font-style: normal;
   font-stretch: normal;
   line-height: 1.8;
@@ -358,7 +358,7 @@ font-family: "ProximaNova-Light";
 }
 .social-lists li{
   font-size: 12.5px;
-  font-weight: 600;
+  //font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -422,7 +422,7 @@ footer {
 }
 .banner-contents h2{
   font-size: 34px;
-  font-weight: 300;
+  //font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.4;
@@ -433,7 +433,7 @@ footer {
 
 }
 .banner-contents h2 span{
-  font-family: "ProximaNova-Bold";
+  font-family: "proximanovabold";
   padding-top: 1%;
   color: #4a4a4a;
   font-size: 34px;
@@ -497,17 +497,17 @@ footer {
 background-color: #9600ff;
 
 }
-.mobile_menu_lists ul{
-    padding: 0px 0;
-    box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
-    background-color: #9600ff;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    z-index: 99;
-    width: 100%;
-    right: 0;
-}
+// .mobile_menu_lists ul{
+//     padding: 0px 0;
+//     box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
+//     background-color: #9600ff;
+//     position: absolute;
+//     top: 0px;
+//     right: 0;
+//     z-index: 99;
+//     width: 100%;
+//     right: 0;
+// }
 .header-content{
     position:relative;
 }
