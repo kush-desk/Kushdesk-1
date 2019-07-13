@@ -98,9 +98,19 @@ label {
 }
 .hassless .row,
 .laws .row{
-
   align-items: center;
 }
+.logo-header a,
+.footer-logo a{
+    max-width:50%;
+}
+.social-lists li {
+    max-width: 18%;
+}
+.social-row {
+    display: flex;
+    align-items: center;
+ }
 .btn_purple{
 
   font-size: 14px;
@@ -350,6 +360,40 @@ font-family: "ProximaNova-Light";
   display: flex;
   align-items: center;
 }
+.mobile_menu_lists{
+    display:none;
+}
+.menu_btns.dropbtn:hover ~ .mobile_menu_lists {
+
+    display: block;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
+
+background-color: #9600ff;
+
+}
+.mobile_menu_lists ul{
+    padding: 0px 0;
+    box-shadow: 0 2px 4px 0 rgba(142, 45, 197, 0.5);
+    background-color: #9600ff;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    right: 0;
+}
+.header-content{
+    position:relative;
+}
+.mobile_menu_lists li {
+    padding: 10px;
+}
+.mobile_menu_lists li a{
+    color:#fff;
+}
 @media(max-width : 1024px){
   .banner-contents h2 {
       font-size: 25px;
@@ -360,6 +404,12 @@ font-family: "ProximaNova-Light";
   }
 }
 @media(max-width : 767px){
+    .logo-header a, .footer-logo a{
+        max-width: unset;
+    }
+    .social-lists li{
+        max-width: 100%;
+    }
   .mobile-banner{
       display: block;
   }

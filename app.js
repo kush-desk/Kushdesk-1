@@ -94,33 +94,37 @@ app.get('/test/', function (res, res) {
   res.send("hello");
   return
 })
-app.get('/', function (req, res) {
-  console.log(req.useragent)
+
+app.use('/', express.static(path.join(__dirname, 'dist/espire/')));
 
 
-  filename = __dirname + '/dist/espire/index.html';
-  console.log(filename)
-  res.sendFile(filename);
-  return;
+// app.get('/', function (req, res) {
+//   console.log(req.useragent)
 
-  // if (req.useragent.isMobile) {
-  //   console.log("yeeyeyeyeyey");
-  //   filename = __dirname + '/dist/mobile/omni/dist/my-app/index.html';
-  //   console.log(filename)
 
-  //   res.sendFile(filename);
-  // }
+//   filename = __dirname + '/dist/espire/index.html';
+//   console.log(filename)
+//   res.sendFile(filename);
+//   return;
 
-  // else {
+//   // if (req.useragent.isMobile) {
+//   //   console.log("yeeyeyeyeyey");
+//   //   filename = __dirname + '/dist/mobile/omni/dist/my-app/index.html';
+//   //   console.log(filename)
 
-  //   console.log("NONONONO");
-  //   filename = __dirname + '/dist/amp/index.html';
-  //   console.log(filename)
-  //   res.sendFile(filename);
-  // }
+//   //   res.sendFile(filename);
+//   // }
 
-  return;
-});
+//   // else {
+
+//   //   console.log("NONONONO");
+//   //   filename = __dirname + '/dist/amp/index.html';
+//   //   console.log(filename)
+//   //   res.sendFile(filename);
+//   // }
+
+//   return;
+// });
 
 
 app.get('*.*', express.static(__dirname + '/dist/espire'));
